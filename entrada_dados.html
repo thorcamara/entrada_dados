@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soma</title>
+</head>
+<body>
+    <label for="x">x:</label>
+    <input type="text" id="x"><br>
+    <label for="y">y:</label>
+    <input type="text" id="y"><br>
+    <label for="out">out</label>
+    <input type="text" disabled id="out"><br>
+    <button type="button" onclick="somar()">somar</button>
+    <script>
+        function somar() {
+            x = parseInt(document.getElementById("x").value);
+            y = parseInt(document.getElementById("y").value);
+            out = x + y;
+            document.getElementById("out").value = out;
+        }
+    </script>
+</body>
+</html>
